@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-import { resolve } from "node:path";
+import { execSync } from "node:child_process";
 
-console.log(resolve())
+execSync("git clone git@gitlab.com:shifsync/shifsync-app.git shifsync", {
+  stdio: "inherit",
+});
