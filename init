@@ -1,6 +1,13 @@
 #!/usr/bin/env node
 import { execSync } from "node:child_process";
 
+const cwd = resolve("shifsync");
+
 execSync("git clone git@gitlab.com:shifsync/shifsync-app.git shifsync", {
+  stdio: "inherit",
+});
+
+execSync("cli/bin/init.sh", {
+  cwd,
   stdio: "inherit",
 });
