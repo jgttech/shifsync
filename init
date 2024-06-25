@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log("FOk")
+import { resolve } from "node:path";
+
+console.log(resolve())
