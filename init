@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-console.log("HELLO WORLD");
+import { resolve } from "node:path";
+
+console.log(resolve())
