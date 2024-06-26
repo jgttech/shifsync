@@ -9,5 +9,4 @@ execSync("git clone git@gitlab.com:shifsync/shifsync-app.git shifsync", {
   stdio: "inherit",
 });
 
-sh("git checkout ui");
 sh(`./cli/bin/init.sh "${cwd}"`);
